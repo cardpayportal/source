@@ -1,0 +1,6 @@
+{
+    "require": {
+        "facebook/webdriver": "^1.7",
+        "ext-SimpleXML": "^7.1"
+    }
+}

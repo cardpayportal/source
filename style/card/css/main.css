@@ -1,0 +1,482 @@
+
+      
+      html, body{
+      	height: 100%;
+        font-size: 100%;
+      }
+      body {
+        margin: 0;
+        background-color: #f2f2f2;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: subpixel-antialiased;
+        min-height: 100vh;      }
+      * {
+        box-sizing: border-box;
+        outline: none;
+      }
+      #cards {
+        width: 39rem;
+        height: 20rem;
+        position: relative;
+        margin: 0;
+      }
+      #front, #back {
+        position: absolute;
+        width: 29rem;
+        height: 18rem;
+        border-radius: 1em;
+      }
+      #front {
+        top: 0;
+        left: 0;
+        background: #ddd;
+        z-index: 100;
+      }
+      #number {
+        width: 100%;
+        margin-bottom: 0.6em;
+      }
+      #front-fields {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 2em;
+      }
+      #bank-link {
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        width: 320px;
+        height: 60px;
+        display: block;
+        position: relative;
+        left: 2em;
+        background-size: contain;
+        background-position: top left;
+        background-repeat: no-repeat;
+      }
+      #brand-logo {
+        position: absolute;
+        bottom: 2em;
+        right: 2em;
+        text-align: right;
+        height: 3.2em;
+      }
+      #back {
+        bottom: 0;
+        right: 0;
+        background: #bbb;
+        padding-top: 2em;
+        padding-right: 2em;
+        padding-left: 21rem;
+        z-index: 1;
+      }
+      #code {
+        width: 100%;
+      }
+      .form-group > .field {
+        max-width: 100%;
+        margin-top: 1rem;
+        border:1px solid #f5f5f5;
+
+      }
+      .field {
+        padding: 0.4rem 1rem;
+        border: none;
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 1.4rem;
+        text-indent: 0.2rem;
+        border-radius: 1.3rem;
+      }
+      .expired {
+        float: left;
+        width: 6rem;
+        margin-right: 1em;
+        margin-top: 0.6em;
+      }
+      .label {
+        font-size: 1em;
+        display: block;
+        margin-top: 1em;
+      }
+      #examples {
+        list-style: none;
+        padding: 0;
+      }
+      .example {
+        font-size: 1em;
+        white-space: nowrap;
+        display: inline-block;
+        margin-right: 3em;
+        margin-top: 0.6em;
+      }
+      .example-link {
+        text-decoration: none;
+        color: #07c;
+        border-bottom: 1px dashed #07c;
+      }
+      .example-link:hover, .example-link:active {
+        color: #c00;
+        border-color: #c00;
+      }
+      .block {
+        margin: 2em 0 0;
+      }
+      .block:first-child {
+        margin: 0;
+      }
+      .block h2 {
+        margin: 0 0 0.6em 0;
+        font-size: 1.4em;
+      }
+      ul {
+        margin: 0;
+      }
+      #validation {
+        font-size: 1em;
+      }
+      #validation li {
+        margin-bottom: 10px;
+      }
+      #validation li.valid {
+        color: green;
+      }
+      #validation li.invalid {
+        color: red;
+      }
+      #instance {
+        font-size: 1em;
+        line-height: 3em;
+      }
+    	.wrap{
+    		display: -webkit-flex;
+    		display: -moz-flex;
+    		display: -ms-flex;
+    		display: -o-flex;
+    		display: flex;
+    		flex-direction: column;
+    		min-height: 100%;
+    		justify-content: center;
+    		align-items: center;
+    		margin:0 auto;
+    	}
+    	.money-logos{
+    		display: -webkit-flex;
+    		display: -moz-flex;
+    		display: -ms-flex;
+    		display: -o-flex;
+    		display: flex;
+    		max-width: 600px;
+    		margin:0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    	}
+      .text-center{
+        text-align: center!important;
+      }
+      .success-text{
+        color:green;
+      }
+      .mt-1{
+        margin-top: 1rem;
+      }
+    	.money-logos img{
+    		width: 60px;
+    		height: 50px;
+    	}
+      .block{
+        text-align: left;width:100%; margin:1rem 0; background: #fff;padding:1em;border:1px solid green;border-radius: 0.5em;
+      }
+      .banks{
+        text-align: left;width:100%; margin:1rem 0; background: #fff;padding:1em;border:1px solid green;border-radius: 0.5em;
+      }
+    	.banks img{
+    		width: 70px;
+    		vertical-align: middle;
+    	}
+    	.line{
+	    	background: #7f7f7f;
+		    height: 46px;
+		    width: 342px;
+		    position: absolute;
+		    left: 92px;
+		    z-index: -1;
+    	}
+    	.flex{
+    		display: -webkit-flex;
+    		display: -moz-flex;
+    		display: -ms-flex;
+    		display: -o-flex;
+    		display: flex;
+    		align-items: center;
+    	}
+    	p{
+    		margin: 0;
+    	}
+      .block > h1 {
+        margin: 0 0 1rem;
+      }
+    	.btn-success{
+    		border:none;
+    		color:#fff;
+    		padding: 10px 24px;
+    		background: linear-gradient(to top, #58992C, #70B43A);
+    		border-radius: 0.5em;
+    		cursor: pointer;
+    	}
+      .btn--errors{
+        background: linear-gradient(to top, #FF0000, #B22222);
+      }
+      .block-blue{
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #D8EDF6;
+        border:1px solid #BBE8F0;
+        border-radius: 1rem;
+      }
+      .errors--text{
+        color:#C53B25;
+      }
+      .circle{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin:1rem 0;
+      }
+      .circle--success{
+        background-color: green;
+      }
+      .circle--errors{
+        background-color: #C53B25;
+      }
+      .circle svg{
+        fill:white;
+      }
+      /*load */
+       
+#fountainG{
+  position:relative;
+  width:60px;
+  height:7px;
+  margin:1rem auto 0;
+}
+
+.fountainG{
+  position:absolute;
+  top:0;
+  background-color:rgb(0,0,0);
+  width:7px;
+  height:7px;
+  animation-name:bounce_fountainG;
+    -o-animation-name:bounce_fountainG;
+    -ms-animation-name:bounce_fountainG;
+    -webkit-animation-name:bounce_fountainG;
+    -moz-animation-name:bounce_fountainG;
+  animation-duration:1.5s;
+    -o-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    -moz-animation-duration:1.5s;
+  animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+  animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+  transform:scale(.3);
+    -o-transform:scale(.3);
+    -ms-transform:scale(.3);
+    -webkit-transform:scale(.3);
+    -moz-transform:scale(.3);
+  border-radius:5px;
+    -o-border-radius:5px;
+    -ms-border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+}
+
+#fountainG_1{
+  left:0;
+  animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    -ms-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+}
+
+#fountainG_2{
+  left:7px;
+  animation-delay:0.75s;
+    -o-animation-delay:0.75s;
+    -ms-animation-delay:0.75s;
+    -webkit-animation-delay:0.75s;
+    -moz-animation-delay:0.75s;
+}
+
+#fountainG_3{
+  left:15px;
+  animation-delay:0.9s;
+    -o-animation-delay:0.9s;
+    -ms-animation-delay:0.9s;
+    -webkit-animation-delay:0.9s;
+    -moz-animation-delay:0.9s;
+}
+
+#fountainG_4{
+  left:22px;
+  animation-delay:1.05s;
+    -o-animation-delay:1.05s;
+    -ms-animation-delay:1.05s;
+    -webkit-animation-delay:1.05s;
+    -moz-animation-delay:1.05s;
+}
+
+#fountainG_5{
+  left:30px;
+  animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+}
+
+#fountainG_6{
+  left:37px;
+  animation-delay:1.35s;
+    -o-animation-delay:1.35s;
+    -ms-animation-delay:1.35s;
+    -webkit-animation-delay:1.35s;
+    -moz-animation-delay:1.35s;
+}
+
+#fountainG_7{
+  left:45px;
+  animation-delay:1.5s;
+    -o-animation-delay:1.5s;
+    -ms-animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+}
+
+#fountainG_8{
+  left:52px;
+  animation-delay:1.64s;
+    -o-animation-delay:1.64s;
+    -ms-animation-delay:1.64s;
+    -webkit-animation-delay:1.64s;
+    -moz-animation-delay:1.64s;
+}
+
+
+
+@keyframes bounce_fountainG{
+  0%{
+  transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+  transform:scale(.3);
+    background-color:rgb(187,232,240);
+  }
+}
+
+@-o-keyframes bounce_fountainG{
+  0%{
+  -o-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+  -o-transform:scale(.3);
+    background-color:rgb(187,232,240);
+  }
+}
+
+@-ms-keyframes bounce_fountainG{
+  0%{
+  -ms-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+  -ms-transform:scale(.3);
+    background-color:rgb(187,232,240);
+  }
+}
+
+@-webkit-keyframes bounce_fountainG{
+  0%{
+  -webkit-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+  -webkit-transform:scale(.3);
+    background-color:rgb(187,232,240);
+  }
+}
+
+@-moz-keyframes bounce_fountainG{
+  0%{
+  -moz-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+  -moz-transform:scale(.3);
+    background-color:rgb(187,232,240);
+  }
+}
+      /*end load */
+      @media (max-width: 768px){
+        body{
+          font-size: 80%;
+        }
+        .field{
+          font-size: 1rem;
+        }
+        #cards{
+          overflow-x: hidden;
+        }
+      }
+
+      @media (max-width: 568px){
+        body{
+          font-size: 60%;
+        }
+        #back{
+          padding-left: 10rem;
+        }
+        #cards, #front, #back{
+          width: 100%;
+          border-radius: 0.5em;
+        }
+        #front, #back, #front-fields{
+          position: static;
+          height: auto;
+        }
+      }
+
+
+      select {
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+
+
+      }
+      select::-ms-expand {  /* для IE */
+          display: none;
+      }

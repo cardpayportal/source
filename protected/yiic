@@ -1,0 +1,12 @@
+<?php
+//universal
+define('DIR_ROOT', realpath(dirname(__FILE__).'/../').'/');
+require_once(DIR_ROOT.'_yii_debug.php');
+
+$config = DIR_ROOT.'protected/config/main_console.php';
+
+require_once(DIR_ROOT.'protected/functions/yii.php');
+require_once(DIR_ROOT.'../yii/framework/yii.php');
+
+
+Yii::createConsoleApplication($config)->run();

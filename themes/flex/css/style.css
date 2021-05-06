@@ -1,0 +1,455 @@
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: whitesmoke;
+}
+
+/*std table*/
+table.std{
+    border-collapse: collapse;
+}
+
+table.std td{
+    margin: 0;
+    padding: 0;
+}
+
+table.std td, table.std th, table.std{
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*padding table*/
+table.padding{
+    border-collapse: collapse;
+}
+
+table.padding td,table.padding th{
+    margin:	0;
+    padding: 10px;
+}
+
+table.padding td, table.padding{
+    border: 1px solid black;
+}
+
+/*account block*/
+div.account{
+    float: left;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+div.clear{
+    clear:both
+}
+div#content{
+    width: 900px;
+}
+
+div#auth{
+    width: 150px;
+
+}
+
+div.center{
+    padding: 20px;
+    margin: auto;
+}
+.small{
+    font-size: 12px;
+}
+.error{
+    color: #CC0033;
+}
+.processing{
+    color: #6b64ee;
+}
+.warning{
+    color: #ff9036;
+}
+.success{
+    color: #33CC00;
+}
+#menu{
+    margin: 20px;
+}
+#users{
+    font-size: 14px;
+}
+#users div{
+    margin-top: 10px;
+}
+.accountIn{
+    color: #FF9900;
+}
+.accountTransit{
+    color: #333399;
+}
+.accountOut{
+    color: #33CC00;
+}
+.smallText{
+    font-size: smaller;
+}
+
+table.noBorder{
+    border-collapse: collapse;
+}
+
+table.noBorder td{
+    margin: 0;
+    padding: 3px;
+}
+
+table.noBorder td, table.noBorder th, table.noBorder{
+    border: none;
+    text-align: center;
+}
+
+table tr.error{
+    background-color: #ff8080;
+    color: black;
+}
+
+table tr.success{
+    background-color:#ccffcc;
+    color: black;
+}
+
+table tr.linked{
+    background-color: #3d6ead;
+    color: black;
+}
+
+table tr.wait{
+    background-color: rgba(255, 156, 6, 0.65);
+    color: black;
+}
+table.trHeight td{
+    font-size: 13px;
+}
+.new{
+    color: #161eb5;
+}
+.wait{
+    color: #ffa306;
+}
+.complete{
+    color: green;
+}
+.menu{
+    margin: 20px;
+}
+img.border{
+    border: 1px solid black;
+}
+span.dotted{
+    border-bottom: 1px dotted blue;
+}
+.pagination{
+    margin: 20px;
+}
+.search {
+    margin: 20px;
+}
+.search input{
+    width: 200px;
+}
+.trust{
+    color: green;
+    font-weight: bold;
+}
+/*заявка финансиста - высокий приоритет*/
+.orderPriorityBig{
+    background-color: beige;
+    color: black;
+}
+/*заявка финансиста - переплата*/
+.orderOverPay{
+    background-color: mediumvioletred;
+    color: black;
+}
+/*кнопки оплат*/
+.payButtons{
+    margin-top:5px;
+    height:25px;
+    line-height:25px;
+    vertical-align: bottom;
+}
+
+.payButtons input[type=submit] {
+    width: 90px;
+    height: 25px;
+    margin-right:15px;
+}
+.payButtons .green{
+    background-color: rgba(5, 221, 19, 0.33);
+}
+
+.payButtons .orange{
+    background-color: rgba(238, 207, 31, 0.46);
+}
+.payButtons .blue{
+    background-color: #8cabee;
+}
+
+.payButtons input[type=text]{
+    width: 50px;
+    height: 25px;
+    border:none !important;
+    padding: 0 !important;
+    vertical-align: bottom;
+}
+.payButtons .custom{
+    margin-left:5px;
+    height: 25px;
+}
+
+table tr.ratTransaction{
+    background-color: PapayaWhip;
+    color: black !important;
+}
+
+span.ratTransaction{
+    color: PapayaWhip;
+}
+
+span.withComment{
+    border-bottom: 1px dotted #000080;
+    cursor: help;
+}
+
+span.green{
+    color: forestgreen;
+    font-weight: bold;
+}
+span.red{
+    color: #a30012;
+    font-weight: bold;
+}
+span.orange{
+    color: #ff9036;
+    font-weight: bold;
+}
+
+/*transparent tables*/
+table.invisible{border: none;}
+table.invisible tr{border: none;}
+table.invisible td{border: none;}
+
+/*std input[type=text]*/
+input[type="text"],input[type="password"]{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*reedonly input format*/
+input[type="text"][readonly]{
+    opacity: 0.5;
+    border: none;
+    outline: none;
+}
+/*
+span.statusHalf{
+    color: #FF9900;
+    font-weight: 600;
+}
+*/
+
+span.statusFull{
+    color: #33CC00;
+    font-weight: 600;
+}
+
+div#supportOnline{
+    margin: 20px;
+}
+
+/*news*/
+div.news_row{
+    margin: 20px;
+    border-bottom: dotted cadetblue;
+}
+
+input[type=submit].devTest, button.devTest{
+    background-color: crimson;
+}
+
+input[type=submit].red, button.red{
+    background-color: crimson;
+}
+
+input[type=submit].green, button.green{
+    background-color: #33CC00;
+}
+
+input[type=submit].orange, button.orange{
+    background-color: #eea441;
+    color:black;
+}
+
+.inline{
+    display: inline;
+}
+
+.noWrap{
+    white-space: nowrap;
+}
+
+.checking{
+    width: 70px;
+}
+
+table tr.selected{
+    background-color: #a8eedd;
+    color: black !important;
+}
+
+input[type=submit].selectWallets{
+    background-color: #a8eedd;
+    height: 35px;
+}
+
+input[type=submit].selectWalletsComplete{
+    background-color: #6b64ee;
+    height: 35px;
+}
+
+.hidden{
+    display: none;
+}
+br{
+    margin-bottom: 3px;
+}
+tr.good{
+    background-color: #33CC00;
+    color: black;
+}
+
+div#calcForm{
+    float: left;
+    margin-right: 20px;
+    width: 400px;
+}
+
+div#orderList{
+    float: left;
+    height: 350px;
+    width: 450px;
+    overflow: scroll;
+    border-left: 2px solid #c5c5c5;
+    padding-left: 10px;
+}
+
+div.clear{clear:both}
+
+.main{
+    font-weight: bold;
+}
+
+.amount {
+    /*width:12px;*/
+    margin:2px auto;
+}
+.amount span {
+    /*display:inline-block;*/
+    width:8px;
+    height:8px;
+    background:#ededed;
+    cursor:pointer;
+    text-align:center;
+}
+.amount span:hover {
+    background:#dfdfdf;
+}
+.amount input {
+    color: black;
+    width: 8px;
+    text-align:center;
+}
+
+input[type="text"][readonly] {
+    opacity: 1;
+}
+
+.minus, .plus {
+    width: 10px;
+    height: 10px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid #ddd;
+}
+
+.legend {
+    background-color: rgba(5, 221, 19, 0.33);
+    color: #000;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.layer {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 400px;  /*Ширина блока */
+    height: 150px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 1px black; /* Параметры рамки */
+}
+
+.switch-btn {
+    display: inline-block;
+    width: 33px; /* ширина */
+    height: 18px; /* высота */
+    border-radius: 9px; /* радиус скругления */
+    background: linear-gradient(to right, #7f7f7f 0, #bfbfbf 40%, #7fd03e 60%, #118c4e 100%);
+    background-size: 80px 100%;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; /* анимация */
+}
+.switch-btn::after {
+    content: "";
+    height: 16px; /* высота кнопки */
+    width: 16px; /* ширина кнопки */
+    border-radius: 8px;
+    background: #fff; /* цвет кнопки */
+    top: 1px; /* положение кнопки по вертикали относительно основы */
+    left: 1px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms; /* анимация */
+    position: absolute;
+    z-index: 1;
+}
+.switch-on {
+    background-position-x: -40px;
+}
+.switch-on::after {
+    left: 17px;
+}
+
+.tab-button {
+    padding: 6px 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #f0f0f0;
+    margin-bottom: -1px;
+    margin-right: -1px;
+}
+.tab-button:hover {
+    background: #e0e0e0;
+}
+.tab-button.active {
+    background: #e0e0e0;
+}
+.tab {
+    border: 1px solid #ccc;
+    padding: 10px;
+}

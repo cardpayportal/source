@@ -1,0 +1,23 @@
+Mozilla/5.1 (Windows NT 5.1; U; ru) Gecko/20100101 Firefox/5.1
+Mozilla/5.2 (Windows NT 5.2; U; ru) Gecko/20100101 Firefox/5.2 (Debian)
+Mozilla/5.3 (Windows NT 5.3; U; ru) Gecko/20110619 Firefox/5.3
+Mozilla/5.4 (Windows NT 5.4; U; ru) Gecko Firefox/5.4
+Mozilla/5.5 (Windows NT 5.5; U; ru) Gecko/20100101 Firefox/5.5 FirePHP/0.5
+Mozilla/5.6 (Windows NT 5.6; U; ru) Gecko/20100101 Firefox/5.6 Firefox/5.0
+Mozilla/5.7 (Windows NT 5.7; U; ru) Gecko Firefox/5.7
+Mozilla/5.8 (Windows NT 5.8; U; ru) Gecko/20100101 Firefox/5.8
+Mozilla/5.9 (Windows NT 5.9; U; ru) Gecko Firefox/5.9
+Mozilla/6.1 (Windows NT 6.1; U; ru) Gecko/20100101 Firefox/6.1
+Mozilla/6.2 (Windows NT 6.2; U; ru) Gecko/20100101 Firefox/6.2
+Mozilla/6.3 (Windows NT 6.3; U; ru) Gecko/20110619 Firefox/6.3
+Opera/9.81 (Windows NT 6.4; U; ru) Presto/2.7.62 Version/11.00
+Opera/9.82 (Windows NT 6.5; U; ru) Presto/2.7.62 Version/12.00   Opera/9.80 (Windows NT 6.1; U; zh-cn) Presto/2.6.37 Version/11.00
+Opera/9.83 (Windows NT 6.6; U; pl) Presto/2.7.62 Version/13.00
+Opera/9.84 (Windows NT 6.7; U; ko) Presto/2.7.62 Version/14.00
+Opera/9.85 (Windows NT 6.8; U; fi) Presto/2.7.62 Version/15.00
+Opera/9.86 (Windows NT 6.9; U; ru) Presto/2.7.62 Version/16.00
+Opera/9.87 (Windows NT 7.1; U; ru) Presto/2.7.62 Version/17.00
+Opera/9.88 (Windows NT 7.2; U; en) Presto/2.7.39 Version/18.00
+Opera/9.89 (Windows NT 7.3; U; ru) Presto/2.7.39 Version/19.00
+Opera/9.90 (Windows NT 7.4; U; MRA 5.5 (build 02842); ru) Presto/2.7.62 Version/11.00
+Opera/9.91 (Windows NT 7.5; U; it) Presto/2.7.62 Version/11.00
